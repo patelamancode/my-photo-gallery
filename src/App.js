@@ -1,8 +1,14 @@
 import './App.css';
+import Title from './Components/Title';
+import UploadForm from './Components/UploadForm';
 
 function App() {
   return(
-    <h1>hello aman</h1>
+    <div>
+       <Title />
+       <UploadForm />
+    </div>
+    
   )
 }
 
