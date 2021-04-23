@@ -13,7 +13,12 @@ import 'firebase/firestore';
   appId: "1:740001028053:web:50fc0d65df9e1b1cb04f5c"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+if(!firebase.apps.length){
+  firebase.initializeApp(firebaseConfig);
+}else{
+  firebase.app();
+}
+
 
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
